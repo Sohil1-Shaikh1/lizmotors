@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+
+*{
+    background-color: var(--bg-color);
+    font-family: "Syne", sans-serif;
+}
+.navbar{
+    display: flex;
+    background-image: url(images/home-main.jpg);
+    
+    background-repeat: no-repeat;
+    background-position: left;
+   border:0.3rem solid var(--text-color);
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar h3{
+    background: transparent;
+    margin-left: 20px;
+    color: var(--snd-bf-color);
+}
+.navbar .navbar-items a{
+    margin-inline: 20px;
+    justify-content: space-evenly;
+    color: var(--text-color);
+}
+:root{
+    --bg-color: #191f36;
+    --snd-bf-color: #262b40;
+    --text-color:#fff;
+    --main-color: #5a9eda;
+}
+.home-main{
+    position: relative;
+    display: flex; 
+}
+.home{
+    position: relative;
+    
+}
+.home .home-main img{
+    width: 40rem;
+    margin-top: 20px;
+    height: 400px;
+    margin-right: 50px;
+    margin-left: 10px;
+    border-radius: 10%;
+
+}
+.home .home-main .home-content{
+    margin-top: 50px;
+    position: relative;
+    align-items: center;
+    color: var(--text-color);
+    
+}
+
+.researches{
+    font-size: 2.2rem;
+    border: 0.3rem solid var(--text-color);
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: underline;
+}
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--text-color);
+    color: var(--bg-color);
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    border: 2px solid var(--text-color);
+    letter-spacing: 0.1rem;
+}
+.btn:hover{
+    box-shadow: 0 0 15px var(--text-color);
+    color: black;
+    transform: scale(1.03);
+    background-color: var(--text-color);
+}
+
+
+.typing-test{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+.typing-test span{
+    position: relative;
+}
+.typing-test span::before{
+    content: 'LIZMOTORS';
+    color: var(--main-color);
+    animation: words 20s infinite;
+}
+.typing-test span::after{
+    content: '';
+    background: var(--bg-color);
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid var(--bg-color);
+    right: -8;
+    animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
+}
+@keyframes cursor {
+    to{
+        border-left: 3px solid var(--main-color);
+    }    
+}
+@keyframes words {
+    0%, 30% {
+        content: 'LIZMOTORS';
+    }
+    31%, 60% {
+        content: 'A FUSION OF AI & AUTOMOBILE';
+    }
+    61%, 100%{
+        content: 'LET AI HANDLE IT';
+    }
+}
+@keyframes typing {
+    10%, 30%,
+    40%, 75%,
+    80%, 100%{
+        width: 0;
+    }
+    5%, 25%,
+    30%, 65%,
+    70%, 80%, 90%{
+        width: calc(100% + 8px);
+    }   
+}
+
+.research-main{
+    background-color: var(--snd-bf-color);
+    padding: 15px 9%;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 15px;
+
+
+}
+.research-main .box{
+    box-shadow: 0 5px 10px var(--text-color);
+    border-radius: 10%;
+    background: #5a9eda;
+    text-align: center;
+    padding: 30px 20px;
+}
+.research-main .box img{
+    height: 200px;
+}
+.research-main .box h3{
+    background: transparent;
+    color: var(--bg-color);
+    font-size: 22px;
+    padding: 10px 0;
+}
+.research-main .box p{
+    background: transparent;
+    color: var(--snd-bf-color);
+    font-size: 15px;
+    line-height: 1.8;
+}
+.back-video{
+    width: 600px ;
+    margin-right: 10px;
+    border-radius: 15%;
+}
+.back-videos{
+    width: 100%;
+    
+}
+.plannings{
+    font-size: 2.2rem;
+    border: 0.3rem solid var(--text-color);
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: underline;
+}
+.DESIGNING-SEC{
+    font-size: 2.2rem;
+    border: 0.3rem solid var(--text-color);
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: underline;
+}
+.Planning-sec{
+    display: flex;
+    
+}
+
+.info-container h3{
+    color: white;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+/* @media (min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+} */
+.new-vid{
+    width: 400px ;
+    margin-right: 10px;
+    border-radius: 15%;
+
+}
+.design-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.follow-SEC{
+    font-size: 2.2rem;
+    border: 0.3rem solid var(--text-color);
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: underline;
+}
+.follow{
+    display: flex;
+    justify-content: space-between;
+}
+.follow-us i{
+    width: 200px;
+    height: auto;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+}
+
